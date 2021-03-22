@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+#shop {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* shop header  */
+
+.shop_header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 310px;
+}
+
+.banner_shop {
+  margin-top: 70px;
+  width: 100%;
+  height: 240px;
+}
+
+.banner_shop img {
+  position: fixed;
+  height: inherit;
+  mix-blend-mode: overlay;
+}
+
+.banner_shop .banner_detail {
+  position: relative;
+  top: 70px;
+  left: 139px;
+}
+
+.banner_detail .banner_title {
+  width: 255px;
+  height: 61px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #7daf3f;
+  font-weight: bold;
+  font-size: 47px;
+  font-family: "PT Sans";
+}
+
+.banner_detail .banner_description {
+  width: 128px;
+  height: 20px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "PT Sans";
+  opacity: 0.5;
+}
+
+/* shop body */
+
+.shop_body_container {
+  background-color: #f8f8f8;
+  margin-top: 310px;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 115px;
+}
+.shop_body {
+  display: flex;
+  max-width: 1092px;
+  margin: 40px auto 0px;
+  position: relative;
+  background-color: #f8f8f8;
+}
+/*/// menu ////*/
+
+.menu {
+  width: 260px;
+}
+
+/*/// categories /////*/
+
+.menu .categories_header {
+  width: 100%;
+  height: 370px;
+  border-top: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+}
+
+.categories_header .categories {
+  height: 64px;
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.categories_body li {
+  height: 61px;
+  font-family: "PT Sans";
+  font-size: 16px;
+  color: #6f6c6c;
+  text-align: left;
+  letter-spacing: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  border-bottom: 1px solid #e2e2e2;
+}
+.categories_body .lame_bois {
+  color: #f7f7f7;
+  background-color: #7daf3f;
+}
+
+/* /////configuration//// */
+
+.configuration_container {
+  height: 478px;
+  margin-top: 30px;
+  background: transparent linear-gradient(179deg, #4d302b 0%, #653d36 100%) 0%
+    0% no-repeat padding-box;
+  overflow: hidden;
+}
+
+.configuration {
+  width: 211px;
+  position: relative;
+  top: 28px;
+  left: 22px;
+}
+
+.configuration .configuration_detail_shop {
+  top: 63px;
+}
+
+.configuration_detail_shop h2 {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "PT Sans";
+  margin-top: 30px;
+}
+.configuration_detail_shop p {
+  width: 211px;
+  height: 95px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "PT Sans";
+  margin-top: 20px;
+}
+
+.configuration_container .svg_shop {
+  fill: #7daf3f;
+  transform: rotate(-15deg) scale(2.9);
+  position: relative;
+  top: 122px;
+  left: 16px;
+}
+
+.configuration_arrow_shop {
+  position: relative;
+  top: 121px;
+  left: 193px;
+  width: 39px;
+  height: 39px;
+}
+
+.configuration_arrow_shop img {
+  width: 39px;
+  height: 39px;
+}
+/* ////products cards//// */
+
+.navbar_products {
+  display: flex;
+  margin-left: 16px;
+}
+.navbar_products > li {
+  font-family: "PT Sans";
+  font-size: 16px;
+  text-align: left;
+  margin-right: 20px;
+  letter-spacing: 0px;
+}
+
+.navbar_products .clicked {
+  color: #1f1f1f;
+  font-weight: bold;
+}
+
+.navbar_products .unclicked {
+  color: #6f6c6c;
+}
+
+.boxes_cards {
+  max-width: 832px;
+  height: 1152px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 14px auto 56px;
+}
+
+/*/// see more button///*/
+.display_bttn {
+  width: 812px;
+  height: 59px;
+  margin-left: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+}
+
+.display_bttn p {
+  letter-spacing: 0px;
+  color: #4d302b;
+  text-transform: uppercase;
+  font: normal normal medium 16px/31px Helvetica Neue;
+}
+/* ///////////////////////iPad ///////////////*/
+@media screen and (max-width: 768px) {
+  /* shop header  */
+
+  .banner_shop .banner_detail {
+    position: relative;
+    top: 120px;
+    left: 25px;
+  }
+
+  .banner_detail .banner_title {
+    font-size: 38px;
+  }
+
+  .banner_shop .banner_detail .banner_description {
+    font-size: 12px;
+  }
+
+  /* shop body */
+
+  .shop_body_container {
+    margin-top: 310px;
+    padding-top: 15px;
+    position: relative;
+  }
+  .shop_body {
+    max-width: 723px;
+    margin: 0px auto 0px;
+    position: relative;
+  }
+  /*/// menu ////*/
+
+  .menu {
+    width: 176px;
+  }
+
+  /*/// categories /////*/
+
+  .menu .categories_header {
+    width: 100%;
+    height: 370px;
+  }
+
+  .categories_header .categories {
+    height: 64px;
+    font-size: 18px;
+    padding-left: 15px;
+  }
+
+  .categories_body li {
+    height: 61px;
+    font-size: 14px;
+    padding-left: 15px;
+  }
+
+  /* /////configuration//// */
+
+  .configuration {
+    width: 177px;
+    position: relative;
+    top: 28px;
+    left: 8px;
+  }
+
+  .configuration .configuration_detail_shop {
+    top: 36px;
+    left: -1px;
+  }
+
+  .configuration_detail_shop h2 {
+    font-size: 18px;
+    margin-top: 35px;
+  }
+
+  .configuration_detail_shop p {
+    width: 177px;
+    height: 80px;
+    font-size: 14px;
+    margin-top: 16px;
+  }
+
+  .configuration_container .svg_shop {
+    position: relative;
+    top: 116px;
+    left: 16px;
+  }
+
+  .configuration_arrow_shop {
+    position: relative;
+    top: 122px;
+    left: 130px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .configuration_arrow_shop img {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* ////////products////// */
+  .products {
+    width: 552px;
+    height: 932px;
+  }
+  .navbar_products {
+    display: flex;
+    margin-left: 8px;
+    width: 552px;
+  }
+  .navbar_products > li {
+    font-family: "PT Sans";
+    font-size: 14px;
+    text-align: left;
+    margin-right: 20px;
+    letter-spacing: 0px;
+  }
+
+  .boxes_cards {
+    max-width: 546px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 14px auto 0px;
+  }
+
+  /*/// see more button///*/
+  .display_bttn {
+    width: 544px;
+    height: 59px;
+    margin-left: 7px;
+  }
+}

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+#footer {
+  margin: 0;
+  padding: 0;
+}
+
+.footer_container {
+  background-color: white;
+  position: relative;
+}
+.footer_container .green_fence {
+  width: 1088px;
+  height: 10px;
+  background-color: #7daf3f;
+  margin: 0 auto;
+}
+
+.footer_container .info_container {
+  margin-left: 87.667px;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.footer_container .info_container .logo_footer {
+  margin-top: 49px;
+  width: 260px;
+  height: 27px;
+}
+.description_footer {
+  display: flex;
+}
+
+.description_footer .links {
+  margin-left: 122px;
+  margin-top: 53px;
+  text-align: left;
+}
+
+.description_footer .contact {
+  margin-left: 116px;
+  margin-top: 53px;
+  text-align: left;
+}
+
+.description_footer .hours {
+  margin-left: 76px;
+  margin-top: 53px;
+  text-align: left;
+}
+
+.description_footer .links .header_links,
+.description_footer .contact .header_contact,
+.description_footer .hours .header_hours {
+  margin-bottom: 29px;
+  letter-spacing: 0px;
+  color: #1f1f1f;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: bold;
+}
+.description_footer .links .body_links {
+  margin-bottom: 12px;
+  letter-spacing: 0px;
+  color: #6f6c6c;
+  font-family: "PT Sans";
+  font-size: 14px;
+}
+
+.description_footer.contact .body_contact,
+.description_footer .hours .body_hours {
+  margin-bottom: 12px;
+  letter-spacing: 0px;
+  color: #1f1f1f;
+  font-family: "PT Sans";
+  font-size: 14px;
+}
+
+.description_footer .contact .body_contact p {
+  letter-spacing: 0px;
+  color: #6f6c6c;
+  font-family: "PT Sans";
+  font-size: 14px;
+}
+
+.hours .body_hours .work_hours {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.note {
+  letter-spacing: 0px;
+  color: #1f1f1f;
+  text-align: left;
+  font-family: "PT Sans";
+  font-size: 11px;
+  height: 14px;
+}
+.time {
+  padding-left: 10px;
+}
+
+/* ///////////////////////iPad ///////////////*/
+@media screen and (max-width: 768px) {
+  .footer_container .green_fence {
+    width: 723px;
+    margin: 0 auto;
+  }
+  .footer_container .info_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .footer_container .info_container .logo_footer {
+    margin-top: 20px;
+    width: 220px;
+    height: 45px;
+  }
+  .description_footer .links {
+    margin-left: -50px;
+    margin-top: 40px;
+    text-align: left;
+  }
+  .description_footer .contact,
+  .description_footer .hours {
+    margin-top: 40px;
+  }
+}

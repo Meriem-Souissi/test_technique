@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+.card {
+  width: 260px;
+  height: 355px;
+  border-top: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  margin: 15px 0px 14px 16px;
+}
+
+.card .card_img {
+  width: 258px;
+  height: 353px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.card .see_more_container {
+  width: 258px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 13px;
+  background-color: white;
+  position: relative;
+  top: -65px;
+  left: 0;
+}
+
+.card .see_more_container .see_more {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #7daf3f;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "PT Sans";
+}
+
+.card .see_more_container .arrow img {
+  background-color: #7daf3f;
+}
+
+.card .detail_container {
+  width: 258px;
+  height: 101px;
+  background-color: white;
+  border-top: 1px solid #e2e2e2;
+  position: relative;
+  top: -166px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.card .detail_container .detail_content {
+  margin: auto 24px 16px 13px;
+}
+
+.card .detail_container .detail_content .name {
+  letter-spacing: 0px;
+  color: #1f1f1f;
+  text-align: left;
+  font-size: 16px;
+  font-family: "PT Sans";
+  width: 223px;
+  height: 53px;
+}
+
+.card .detail_container .detail_content .price {
+  letter-spacing: 0px;
+  color: #b7b7b7;
+  text-align: left;
+  font-size: 23px;
+  font-family: "PT Sans";
+  font-weight: bold;
+  width: 113px;
+  height: 29px;
+}
+
+.card:hover .card_img img {
+  transform: translate(0, -10px);
+  transition: 0.3s;
+}
+
+.card:hover .detail_container {
+  transform: translate(0, -64px);
+  transition: 0.3s;
+}
+
+.card:hover .detail_container .detail_content .name {
+  color: #1f1f1f;
+}
+
+.card:hover .detail_container .detail_content .price {
+  color: #4d302b;
+}
+
+/* styling sticker */
+
+.sticker_container {
+  width: 104px;
+  height: 36px;
+  background-color: #7daf3f;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 147px;
+  top: -510px;
+}
+
+.sticker_container .sticker_title {
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 11px;
+  font-family: "PT Sans";
+}
+
+/* ///////////////////////iPad ///////////////*/
+@media screen and (max-width: 768px) {
+  .card {
+    width: 176px;
+    height: 271px;
+    margin: 15px 0px 14px 6px;
+  }
+  .card .card_img {
+    width: 100%;
+    height: 269px;
+    overflow: hidden;
+    transition: 0.4s;
+  }
+  .card .see_more_container {
+    width: 174px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 13px;
+    background-color: white;
+    position: relative;
+    top: -50px;
+    left: 0;
+  }
+
+  .card .see_more_container .see_more {
+    font-size: 12px;
+    font-family: "PT Sans";
+  }
+
+  .card .detail_container {
+    width: 174px;
+    height: 70px;
+    background-color: white;
+    border-top: 1px solid #e2e2e2;
+    position: relative;
+    top: -135px;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  .card .detail_container .detail_content {
+    margin: 5px 24px 8px 13px;
+  }
+
+  .card .detail_container .detail_content .name {
+    font-size: 14px;
+    font-family: "PT Sans";
+    width: 150px;
+    height: 30px;
+  }
+
+  .card .detail_container .detail_content .price {
+    font-size: 18px;
+    font-family: "PT Sans";
+    width: 150px;
+    height: 22px;
+  }
+  .card:hover .detail_container {
+    transform: translate(0, -30px);
+    transition: 0.3s;
+  }
+
+  /* styling sticker */
+
+  .sticker_container {
+    width: 93px;
+    height: 30px;
+    position: relative;
+    left: 78px;
+    top: -383px;
+  }
+}
